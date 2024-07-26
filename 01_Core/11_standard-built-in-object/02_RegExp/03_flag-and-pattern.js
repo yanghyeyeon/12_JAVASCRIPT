@@ -95,4 +95,4 @@ console.log('-------------- 시작위치와 마지막 위치 --------------');
 
 target = 'https://www.google.com';
 console.log(/^https/.test(target)); // https로 시작하는지 검사
-console.log(/com$/.test(target));
+console.log(/com$/.test(target)); // com으로 끝나는지 검사

@@ -71,12 +71,12 @@ console.log(dec); // http://ohgiraffers.com?name=홍길동&job=student
 
 // encodeURIComponent
 // URI 구성요소를 인수로 받아서 알파벳, 0~9의 숫자, - _ . ! ~ * ' ( ) 문자 제외하고 인코딩한다.
-// 쿼리스트링 구분자로 사용되는 =. ?, & 도 인코딩 된다.
+// 쿼리스트링 구분자로 사용되는 =, ?, & 도 인코딩 된다.
 
 const uriComp = 'name=홍길동&job=student';
 const encComp = encodeURIComponent(uriComp);
-console.log(encComp);
+console.log(encComp); // name%3D%ED%99%8D%EA%B8%B8%EB%8F%99%26job%3Dstudent
 
 // decodeURIComponent
 const decComp = decodeURIComponent(encComp);
-console.log(decComp);
+console.log(decComp); // name=홍길동&job=student

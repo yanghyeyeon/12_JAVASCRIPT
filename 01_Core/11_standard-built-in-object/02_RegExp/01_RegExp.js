@@ -19,5 +19,5 @@ regexp = new RegExp(/j/,'i')
 regexp = new RegExp(/j/i) 
 
 // test 메서드 
-// target 문자열에 대해 정규 표현식 regexp의 패턴을 검색하여 매칭 결과를 Boolean으로 반환
+// - target 문자열에 대해 정규 표현식 regexp의 패턴을 검색하여 매칭 결과를 Boolean으로 반환
 console.log(regexp.test(target));
