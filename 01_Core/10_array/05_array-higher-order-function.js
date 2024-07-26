@@ -123,3 +123,38 @@ console.log(result); // false
 // 배열내 모든 요소가 0보다 큰지 확인
 result = [1, 5, 3, 2, 4].every(item => item > 0);
 console.log(result); // true
+
+console.log('-------------- find, findIndex --------------');
+
+// Array.prototype.find 
+// : 배열을 순회하며 각 요소에 대해 인자로 주어진 콜백함수를 실행 그 결과가 참이 첫번째 요소를 반환
+// 만약, 참인 요소가 존재하지 않으면 undefined
+// Array.prototype.findIndex
+// : 배열을 순회하며 각 요소에 대해 인자로 주어진 콜백함수를 실행 그 결과가 참인 첫번째 요소의 인덱스를 반환
+// 만약, 참인 요소가 존재하지 않으면 -1
+const students = [
+    {name : '유관순', score : 90},
+    {name : '홍길동', score : 80},
+    {name : '장보고', score : 70},
+    {name : '유관순', score : 60},
+];
+
+result = students.find(item => item.name === '유관순');
+console.log(result); // { name: '유관순', score: 90 }
+result = students.findIndex(item => item.name === '유관순');
+console.log(result); // 0
+
+result = students.find(item => item.name === '신사임당');
+console.log(result); // undefined
+result = students.findIndex(item => item.name === '신사임당');
+console.log(result); // -1
+
+// find, findIndex : 일치하는 요소를 찾으면, 더이상 탐색을 하지 않음 -> 하나의 요소, 인덱스만 반환
+
+// 60점 이상의 학생들을 전부 알고 싶으면?
+// filter는 콜백함수의 실행 결과가 true인 배열 요소 값만 추출해서 배열로 반환
+console.log('-------------- filter , find 비교 --------------');
+result = students.find(item => item.score >= 80);
+console.log(result);
+result = students.filter(item => item.name === '유관순');
+console.log(result);
