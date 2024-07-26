@@ -156,5 +156,5 @@ console.log(result); // -1
 console.log('-------------- filter , find 비교 --------------');
 result = students.find(item => item.score >= 80);
 console.log(result);
-result = students.filter(item => item.name === '유관순');
+result = students.filter(item => item.score >= 80);
 console.log(result);

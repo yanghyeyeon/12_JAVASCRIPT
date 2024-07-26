@@ -111,7 +111,7 @@ const snackList = ['사탕','초콜릿','껌','과자']
 console.log(`snackList.join() : ${snackList.join()}`); // 구분자 ,
 console.log(`snackList.join() : ${snackList.join('/')}`); // 구분자 /
 
-console.log('--------------- reverse ---------------');
 
+console.log('--------------- reverse ---------------');
 // Array.prototype.reverse : 배열의 순서를 뒤집음
 console.log(`[1,2,3,4,5].reverse(): ${[1,2,3,4,5].reverse()}`);
