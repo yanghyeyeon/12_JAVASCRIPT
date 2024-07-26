@@ -26,6 +26,7 @@
 
     'use strict'
 
+    // Duplicate parameter name not allowed in this context
     function test(x,x) {
         return x - x;
     }
@@ -35,9 +36,17 @@
 
 }());
 
-// (function() {
+// 4.  with 문의 사용
+(function() {
 
-//     function test(x,x) {
-//         return x - x;
-//     }
-// }());
+    // 'use strict'
+
+    // with문 : 전달된 객체를 스코프 체인에 추가
+    // 객체 이름을 생략할 수 있어 코드가 간단해지는 효과가 있다.
+    // 가독성이 나빠서 사용하지 않는것이 좋다.
+    with({x : 1}) {
+        console.log(x);
+        
+    }
+    
+}());
