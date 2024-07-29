@@ -20,6 +20,7 @@ console.log('안녕하세요');
 		"description": "Log output to console"
 	}
 */
+console.log();
 
 
 console.log('');

@@ -21,11 +21,11 @@ function apply (func, value) {
     return func(value);
 }
 
-console.log(apply(increase,5));
-console.log(apply(decrease,5));
+console.log(apply(increase,5)); // 6
+console.log(apply(decrease,5)); // 4
 
 console.log(
-    apply(function(value){return value **2;},5)
+    apply(function(value){return value **2;},5)  // 25 - **는 제곱
 );
 
 
