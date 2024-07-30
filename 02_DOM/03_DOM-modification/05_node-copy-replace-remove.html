@@ -66,23 +66,23 @@
         $drink.replaceChild($newChild, $coffee);
     </script>
 
-<h3>노드 삭제</h3>
-<pre>
+    <h3>노드 삭제</h3>
+    <pre>
 Node.prototype.removeChild(child) 메서드는 child 매개변수에 인수로 전달한 노드를 DOM에서 삭제한다.
 인수로 전달한 노드는 removeChild 메서드를 호출한 노드의 자식이어야 한다. 
 </pre>
 
-<ul id="food">
-    <li>파스타</li>
-    <li>피자</li>
-</ul>
+    <ul id="food">
+        <li>파스타</li>
+        <li>피자</li>
+    </ul>
 
-<script>
-    const $food = document.getElementById('food');
+    <script>
+        const $food = document.getElementById('food');
 
-    // $food 요소 노드의 마지막 요소를 DOM에서 삭제
-    $food.removeChild($food.lastElementChild);
-</script>
+        // $food 요소 노드의 마지막 요소를 DOM에서 삭제
+        $food.removeChild($food.lastElementChild);
+    </script>
 </body>
 
 </html>
