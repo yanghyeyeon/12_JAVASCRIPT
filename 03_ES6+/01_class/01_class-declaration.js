@@ -30,10 +30,13 @@ console.log(student1);
 /* 생성자 함수와 클래스의 차이점
 1. 클래스 생성자를 new와 함께 호출하지 않으면 에러가 발생한다.
 함수 내부 프로퍼티 [[IsClassConstructor]] : true 가 사용 된다.
+
 2. 클래스에 정의 된 메서드는 열거 불가하다. enumerable 플래그가 false이기 때문이다.
 따라서 for..in 으로 객체 순회 시 메서드 순회 대상에서 제외된다.
+
 3. 클래스는 호이스팅이 발생하지 않는 것처럼 동작한다. 
 함수 선언문 생성자 함수는 함수 호이스팅, 함수 표현식 생성자 함수는 변수 호이스팅이 발생한다.
+
 4. 클래스는 항상 use strict 적용된다.
 클래스 생성자 안 코드는 자동으로 엄격 모드가 적용 된다. 
 => 클래스 문법은 생성자 함수와는 다른 새로운 객체 생성 매커니즘이다.
@@ -52,5 +55,8 @@ let teacher = new Teacher('bear');
 console.log(teacher);
 teacher.introduce();
 
+// 클래스는 new 연산자 없이 사용하면 에러가 발생한다.
 // Student(); // Class constructor Student cannot be invoked without 'new'
+
+// 생성자 방식은 에러가 발생하지 않는다.,
 Teacher();
