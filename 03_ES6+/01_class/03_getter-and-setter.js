@@ -30,6 +30,10 @@ class Product {
         this._price = value;
     }
 }
+// _ 의 의미
+// 내부 프로퍼티를 하나 만들고, getter와 setter는 내부 프로퍼티를 사용하게 하여
+// 무한루프를 피해갈 수 있도록 하기 위함.
+// 내부 프로퍼티는 외부에서 접근이 불가능.
 
 let phone = new Product('전화기', 23000);
 console.log(phone.name + ',' + phone.price);
@@ -38,5 +42,5 @@ console.log(phone.name + ',' + phone.price);
 // getter $ setter
 // 데이터를 꺼내거나 수정할때 편리함.
 
-let computer = new Product('컴퓨터', -150000);
-console.log(computer.name + "," + computer.price);
+// let computer = new Product('컴퓨터', -150000);
+// console.log(computer.name + "," + computer.price);
