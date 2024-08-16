@@ -34,4 +34,3 @@ console.log(merged);
 let str = 'JavaScript';
 console.log([...str]);
 console.log(Array.from(str));
-
