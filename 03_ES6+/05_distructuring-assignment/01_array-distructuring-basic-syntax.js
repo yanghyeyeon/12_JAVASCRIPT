@@ -3,13 +3,14 @@
 
 let nameArr = ["Gildong", "Hong"];
 
-// let [firstName, lastName] = nameArr;
+let [firstName, lastName] = nameArr;
 // let [firstName, lastName] = ["Gildong", "Hong"];
+
 // let firstName = nameArr[0];
 // let lastName = nameArr[1];
 
-// console.log(firstName);
-// console.log(lastName);
+console.log(firstName);
+console.log(lastName);
 
 
 // 반환값이 배열인 split 메서드
@@ -24,16 +25,7 @@ console.log(lastName2);
 
 
 // 쉼표를 사용해 필요하지 않은 배열 요소를 버릴 수 있다.
-
 let [firstName3, , lastName3] = ['fistName','middleName','lastName'];
 
 console.log(firstName3);
 console.log(lastName3);
-
-
-// 객체
-let user = {};
-
-[user.firstName, user.lastName] = 'Gwansoon Yu'.split(' ');
-
-console.log(user);
