@@ -18,3 +18,7 @@ function mergeAll(...args) {
 console.log(mergeAll('안녕하세요.'));
 console.log(mergeAll('안녕하세요','반갑습니다.'));
 console.log(mergeAll('안녕하세요','반갑습니다.','제이름은 홍길동 입니다.'));
+
+// 나머지 매개변수 (...)은 항상 마지막에 있어야 한다.
+// function func(arg1, ...args, arg2) {} => (X)
+// function func(arg1, arg2, ...args) {} => (O)
