@@ -4,8 +4,6 @@ let student = {
     age : 20
 }
 
-console.log(student);
-
 let student2 = {
     name : 'name',
     age : 20
