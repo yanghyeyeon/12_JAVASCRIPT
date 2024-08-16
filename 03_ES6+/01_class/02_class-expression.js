@@ -34,3 +34,9 @@ function makeTutee(message) {
 
 let SecondTutee = makeTutee("100점!!");
 new SecondTutee().feedback();
+
+// 클래스도 함수처럼 일급객체이다.
+// 일급객체
+// - 변수에 할당할 수 있고,
+// - 다른함수를 인자로 받을 수 있고,
+// - 다른 함수의 결과로써 리턴 될 수 있는 객체
